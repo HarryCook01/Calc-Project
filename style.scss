@@ -1,0 +1,233 @@
+@import url(https://fonts.google.com/specimen/Spartan);
+
+
+$theme1Background : hsl(222, 26%, 31%);
+$theme1KeyToggle :hsl(223, 31%, 20%);
+$theme1Output : hsl(224, 36%, 15%);
+$theme1Keys : hsl(225, 21%, 49%);
+$theme1CheckEquals:hsl(6, 63%, 50%);
+$theme1Text:white;
+
+$theme2Background:hsl(0, 0%, 90%);
+$theme2KeyToggle:hsl(0, 5%, 81%);
+$theme2Output:hsl(0, 0%, 93%);
+$theme2Keys:hsl(185, 42%, 37%);
+$theme2CheckEquals:hsl(25, 98%, 40%);
+$theme2Text:hsl(60, 10%, 19%);
+
+$theme3Background: hsl(268, 75%, 9%);
+$theme3KeyToggle:  hsl(268, 71%, 12%);
+$theme3Output:  hsl(268, 71%, 12%);
+$theme3Keys:   hsl(281, 89%, 26%);
+$theme3CheckEquals: hsl(177, 92%, 70%);
+$theme3ActionKeys:hsl(268, 47%, 21%);
+$theme3Text: hsl(52, 100%, 62%);
+
+
+
+
+
+$font:'Spartan',sans-serif ;
+
+
+
+html,body{
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    
+}
+.container{
+    max-width: 100%;
+    background-color:$theme3Background ;
+    min-height: 700px;
+    h1{
+        color: $theme3Text;
+        font-family: $font;
+        margin-top: 0px; 
+        position: relative;
+        top: 35px;
+        left: 30px; 
+        font-weight: 550;
+    }
+    h4{
+        position: relative;
+        left: 190px;
+        top: -5px;
+        color: $theme3Text;
+        letter-spacing: 1.2px;
+        font-family: $font;
+        font-weight: 500;
+    }
+    .theme li{
+        display: inline;
+        color: $theme3Text;
+        position: relative;
+        top: -70px;
+        left: 240px;
+        font-family: $font;
+        letter-spacing:10px;
+        
+    }
+    .toggle-theme{
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        position: relative;
+        left: 265px;
+        top: -85px;
+        width: 85px;
+        height: 26px;
+        background-color: $theme3KeyToggle;
+        border-radius: 15px;
+        .toggle-btn{
+            width: 25px;
+            height: 20px;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+            input{
+                display: none;
+            }
+            .checkmark{
+                width: 20px;
+                height: 20px;
+                background-color:$theme3CheckEquals;
+                border-radius: 50%;
+                display: inline-block;
+                opacity: 0;
+                transition: opacity 0.3s all;
+                position: relative;
+                top: 3px;
+            }
+            input:checked + .checkmark{
+                opacity: 1;
+                display: inline-block;
+            }
+        }
+    }
+    .output{
+        padding: 10px;
+        background-color: $theme3Output;
+        margin: 15px;
+        border-radius: 20px;
+        min-height: 70px;
+        position: relative;
+        top: -40px;
+        color: white;
+        text-align: right;
+        font-size: 40px;
+    }
+    .btn-container{
+        background-color: $theme3KeyToggle ;
+        padding: 25px;
+        margin: 15px;
+        margin-bottom: 20px;
+        border-radius: 20px;
+        margin-top: 40px;
+        position: relative;
+        top: -40px;
+        .grid-btn{
+            text-align: center;
+            button{
+                color: $theme3Text;
+                max-width: 60px;
+                max-height: 60px;
+                min-width: 60px;
+                min-height: 60px;
+                display: inline-block;
+                font-size: 32px;
+                font-weight: bold;
+                margin-right: 10px;
+                margin-bottom: 15px;
+                text-align: center;
+                border-radius: 5px;
+                background-color: $theme3ActionKeys;
+            }
+            #del{
+                color: white;
+                position: relative;
+                background-color:$theme3Keys ;
+                font-size: 20px;
+                font-family: $font;
+                top: -4px;
+            }
+        }
+        .big-btn{
+            button{
+                min-width: 135px;
+                max-width: 135px;
+                max-height: 60px;
+                min-height: 60px;
+                position: relative;
+                margin-right: 10px;
+                font-size: 20px;
+                border-radius: 5px;
+            }
+            #reset{
+                background-color: $theme3Keys;
+                color: white;
+                font-family: $font;
+            }
+            #equals{
+                background-color:$theme3CheckEquals;
+            }
+        }
+    }
+}
+
+
+
+@media only screen and (min-width:450px){
+    .container{
+         max-width: 100%;
+         min-height: 1000px;
+        h1{
+            position: relative;
+            left: 730px;
+            top: 60px;
+        }
+        h4{
+            position: relative;
+            left: 1050px;
+            top: 30px;
+        }
+        .theme li{
+            position: relative;
+            left: 1100px;
+            top: -40px;
+        }
+        .toggle-theme{
+            position: relative;
+            left: 1125px;
+            top: -50px;
+        }
+        .output{
+            max-width: 482px;
+            position: relative;
+            left: 700px;
+            height: 100px;
+        }
+        .btn-container{
+            max-width: 450px;
+            position: relative;
+            left: 700px;
+            .grid-btn{
+                button{
+                    min-width: 95px;
+                }
+            }
+            .big-btn{
+                button{
+                    min-width: 205px;
+                    position: relative;
+                    left: 8px;
+                }
+            }
+        }
+    }
+
+}

@@ -1,0 +1,85 @@
+<!--Calculator with 3 different themes-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/favicon-32x32.png">
+
+    <link rel="stylesheet" href="style.css">
+
+    <link  id="mystylesheet" rel="stylesheet" href="color1.css">
+
+    <title>Calc</title>
+</head>
+<body>
+
+    
+    <div class="container">
+        <h1>calc</h1>
+        <h4>THEME</h4>
+        <div class="theme">
+            <ul>
+                <li>1</li>
+                <li>2</li>
+                <li>3</li>
+            </ul>
+        </div>
+
+        <div class="toggle-theme">
+            <label class="toggle-btn">
+                <input id="first" name="toggle-state" type="radio" onclick="swapStyle('color1.css')" checked>
+                <span class="checkmark"></span>
+            </label>
+
+            <label class="toggle-btn">
+                <input id="second" name="toggle-state" type="radio" onclick="swapStyle('color2.css')">
+                <span class="checkmark"></span>
+            </label>
+
+            <label class="toggle-btn">
+                <input id="third" name="toggle-state" type="radio" onclick="swapStyle('color3.css')">
+                <span class="checkmark"></span>
+            </label>
+        </div>
+
+
+        
+        <div class="calculator">
+            <div class="output">    
+
+            </div>
+            <div class="btn-container">
+                <div class="grid-btn">
+                    <button class="btn">7</button>
+                    <button class="btn">8</button>
+                    <button class="btn">9</button>
+                    <button class="btn" id="del" data-action="clear">DEL</button>
+
+                    <button class="btn">4</button>
+                    <button class="btn">5</button>
+                    <button class="btn">6</button>
+                    <button class="btn operator" data-action="add">+</button>
+
+                    <button class="btn">1</button>
+                    <button class="btn">2</button>
+                    <button class="btn">3</button>
+                    <button class="btn operator" data-action="subtract">-</button>
+
+                    <button class="btn" data-action="decimal">.</button>
+                    <button class="btn">0</button>
+                    <button class="btn operator" data-action="divide">/</button>
+                    <button class="btn operator" data-action="multiply">x</button>
+                </div>
+                <div class="big-btn">
+                    <button class="btn" id="reset" data-action="clear">RESET</button>
+                    <button class="btn equals-key" id="equals" data-action="calculate">=</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,53 @@
+.container{
+    background-color: hsl(268, 75%, 9%);
+}
+
+.container h1{
+    color:hsl(52, 100%, 62%);
+}
+
+.container h4{
+    color:hsl(52, 100%, 62%);
+}
+
+.container .theme li{
+    color: hsl(52, 100%, 62%);
+}
+
+.container .toggle-theme{
+    background-color:hsl(268, 71%, 12%);
+}
+
+.container .toggle-theme .toggle-btn .checkmark{
+    background-color: hsl(177, 92%, 70%);
+}
+
+.container .output{
+    background-color: hsl(268, 71%, 12%);
+    color:hsl(52, 100%, 62%) ;
+    font-weight: 800;
+}
+
+.container .btn-container{
+    background-color:hsl(268, 71%, 12%) ;
+}
+
+.container .btn-container .grid-btn button{
+    color: hsl(52, 100%, 62%);
+    background-color:hsl(268, 47%, 21%) ;
+}
+
+.container .btn-container .grid-btn #del{
+    background-color: hsl(281, 89%, 26%);
+    color: white;
+}
+
+.container .btn-container .big-btn #reset{
+    background-color: hsl(281, 89%, 26%);
+    color: white;
+}
+
+.container .btn-container .big-btn #equals{
+    background-color: hsl(177, 92%, 70%);
+    color:hsl(198, 20%, 13%) ;
+}

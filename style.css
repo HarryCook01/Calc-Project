@@ -1,0 +1,220 @@
+@import url(https://fonts.google.com/specimen/Spartan);
+html, body {
+  padding: 0;
+  margin: 0;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+.container {
+  max-width: 100%;
+  background-color: #160628;
+  min-height: 700px;
+}
+
+.container h1 {
+  color: #ffe53d;
+  font-family: "Spartan", sans-serif;
+  margin-top: 0px;
+  position: relative;
+  top: 35px;
+  left: 30px;
+  font-weight: 550;
+}
+
+.container h4 {
+  position: relative;
+  left: 190px;
+  top: -5px;
+  color: #ffe53d;
+  letter-spacing: 1.2px;
+  font-family: "Spartan", sans-serif;
+  font-weight: 500;
+}
+
+.container .theme li {
+  display: inline;
+  color: #ffe53d;
+  position: relative;
+  top: -70px;
+  left: 240px;
+  font-family: "Spartan", sans-serif;
+  letter-spacing: 10px;
+}
+
+.container .toggle-theme {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  position: relative;
+  left: 265px;
+  top: -85px;
+  width: 85px;
+  height: 26px;
+  background-color: #1d0934;
+  border-radius: 15px;
+}
+
+.container .toggle-theme .toggle-btn {
+  width: 25px;
+  height: 20px;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container .toggle-theme .toggle-btn input {
+  display: none;
+}
+
+.container .toggle-theme .toggle-btn .checkmark {
+  width: 20px;
+  height: 20px;
+  background-color: #6cf9f2;
+  border-radius: 50%;
+  display: inline-block;
+  opacity: 0;
+  -webkit-transition: opacity 0.3s all;
+  transition: opacity 0.3s all;
+  position: relative;
+  top: 3px;
+}
+
+.container .toggle-theme .toggle-btn input:checked + .checkmark {
+  opacity: 1;
+  display: inline-block;
+}
+
+.container .output {
+  padding: 10px;
+  background-color: #1d0934;
+  margin: 15px;
+  border-radius: 20px;
+  min-height: 70px;
+  position: relative;
+  top: -40px;
+  color: white;
+  text-align: right;
+  font-size: 40px;
+}
+
+.container .btn-container {
+  background-color: #1d0934;
+  padding: 25px;
+  margin: 15px;
+  margin-bottom: 20px;
+  border-radius: 20px;
+  margin-top: 40px;
+  position: relative;
+  top: -40px;
+}
+
+.container .btn-container .grid-btn {
+  text-align: center;
+}
+
+.container .btn-container .grid-btn button {
+  color: #ffe53d;
+  max-width: 60px;
+  max-height: 60px;
+  min-width: 60px;
+  min-height: 60px;
+  display: inline-block;
+  font-size: 32px;
+  font-weight: bold;
+  margin-right: 10px;
+  margin-bottom: 15px;
+  text-align: center;
+  border-radius: 5px;
+  background-color: #341c4f;
+}
+
+.container .btn-container .grid-btn #del {
+  color: white;
+  position: relative;
+  background-color: #58077d;
+  font-size: 20px;
+  font-family: "Spartan", sans-serif;
+  top: -4px;
+}
+
+.container .btn-container .big-btn button {
+  min-width: 135px;
+  max-width: 135px;
+  max-height: 60px;
+  min-height: 60px;
+  position: relative;
+  margin-right: 10px;
+  font-size: 20px;
+  border-radius: 5px;
+}
+
+.container .btn-container .big-btn #reset {
+  background-color: #58077d;
+  color: white;
+  font-family: "Spartan", sans-serif;
+}
+
+.container .btn-container .big-btn #equals {
+  background-color: #6cf9f2;
+}
+
+@media only screen and (min-width: 450px) {
+  .container {
+    max-width: 100%;
+    min-height: 1000px;
+  }
+  .container h1 {
+    position: relative;
+    left: 730px;
+    top: 60px;
+  }
+  .container h4 {
+    position: relative;
+    left: 1050px;
+    top: 30px;
+  }
+  .container .theme li {
+    position: relative;
+    left: 1100px;
+    top: -40px;
+  }
+  .container .toggle-theme {
+    position: relative;
+    left: 1125px;
+    top: -50px;
+  }
+  .container .output {
+    max-width: 482px;
+    position: relative;
+    left: 700px;
+    height: 100px;
+  }
+  .container .btn-container {
+    max-width: 450px;
+    position: relative;
+    left: 700px;
+  }
+  .container .btn-container .grid-btn button {
+    min-width: 95px;
+  }
+  .container .btn-container .big-btn button {
+    min-width: 205px;
+    position: relative;
+    left: 8px;
+  }
+}
+/*# sourceMappingURL=style.css.map */
